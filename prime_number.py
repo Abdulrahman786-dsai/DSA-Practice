@@ -1,9 +1,15 @@
-import math
+# 1.Check if a Number is Prime:
+# Problem: Write a function to check if a given number is prime.
+solution:-
+num = int(input("Enter a number: "))
 
-def is_prime(n):
-    if n <= 1: return False
-    if n == 2: return True
-    if n % 2 == 0: return False
-    for i in range(3, int(math.sqrt(n)) + 1, 2):
-        if n % i == 0: return False
-    return True
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
