@@ -1,0 +1,12 @@
+#Pythagorean Triplets: Problem:
+#Generate all Pythagorean triplets with values smaller than a given limit.
+
+
+
+limit = int(input("Enter the limit: "))
+for a in range(1,limit):
+    for b in range(a, limit):
+     for c in range(b,limit):
+       if a*a + b*b == c*c:
+         print(a,b,c)
+         
