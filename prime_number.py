@@ -1,6 +1,5 @@
 # 1.Check if a Number is Prime:
-# Problem: Write a function to check if a given number is prime.
-solution:-
+# Problem: Write a function to check if a given number is prime.solution:-
 num = int(input("Enter a number: "))
 
 if num > 1:
@@ -12,4 +11,5 @@ if num > 1:
         print(num, "is a prime number")
 else:
     print(num, "is not a prime number")
+
 
